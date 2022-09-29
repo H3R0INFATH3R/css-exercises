@@ -6,19 +6,60 @@ body {
 
 .header {
   height: 72px;
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
   background: darkmagenta;
   color: white;
 }
 
+.sidebyside {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 85vh;
+}
+
+.card {
+  padding: 32px;
+  margin: 16px;
+  flex: 1 10 auto;
+  max-width: 320px;
+}
+
 .footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
+  flex: 0 0 300px;
+  padding: 16px
+}
+
+.sidebar ul li{
+  list-style: none;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
 }
 
 .card {
